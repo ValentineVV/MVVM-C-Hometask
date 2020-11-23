@@ -17,7 +17,7 @@ class LoginCoordinator: LoginCoordinatorInterface {
 
     func start() {
         let loginVC = UIStoryboard(name: "LoginViewController", bundle: nil).instantiateInitialViewController() as! LoginViewController
-        let loginVM = LoginViewModel(coordinator: self, view: loginVC)
+        let loginVM = LoginViewModel(coordinator: self, view: loginVC, usersService: UsersService())
         loginVC.model = loginVM
         
         navigationVC?.pushViewController(loginVC, animated: true)

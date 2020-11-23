@@ -11,7 +11,7 @@ import XCTest
 class NetworkTests: XCTestCase {
 
     func testURL() {
-        let string = APIHelper.shared.getUrlString()
+        let string = StringService(session: URLSession(configuration: .default)).getUrlString()
         guard let url = URL(string: string) else {
             XCTFail()
             return
@@ -30,7 +30,7 @@ class NetworkTests: XCTestCase {
     func testGetUsers() {
         let expectation = self.expectation(description: "get users")
         var usersList: [LoginModel]?
-        APIHelper.shared.getUsersList { (users) in
+        UsersService().getUsersList { (users) in
             usersList = users
             
             expectation.fulfill()
@@ -47,12 +47,13 @@ class NetworkTests: XCTestCase {
     func testGetStringsList() {
         let expectation = self.expectation(description: "get users")
         var stringsList: [String]?
-        let stringUrl = APIHelper.shared.getUrlString()
+        let stringService = StringService(session: URLSession(configuration: .default))
+        let stringUrl = stringService.getUrlString()
         guard let url = URL(string: stringUrl) else {
             XCTFail()
             return
         }
-        APIHelper.shared.getStringsList(fromUrl: url) { (strings) in
+        stringService.getStringsList(fromUrl: url) { (strings) in
             stringsList = strings
             
             expectation.fulfill()
@@ -64,5 +65,27 @@ class NetworkTests: XCTestCase {
         XCTAssertEqual(stringsList?.count, 10, "wrong ammount of strings")
     }
     
+    func testGetStringsFromJSON() {
+        
+        let session = MockURLSession()
+        let stringService = StringService(session: session)
+        guard let url = URL(string: stringService.getUrlString()) else {
+            XCTFail()
+            return
+        }
+        
+        let expectation = self.expectation(description: "getStrings")
+        
+        var listArr: [String] = []
+        stringService.getStringsList(fromUrl: url) { (list) in
+            listArr = list
+            expectation.fulfill()
+        }
+        
+        waitForExpectations(timeout: 3, handler: nil)
+        
+        XCTAssertTrue(listArr.count == 5)
+        
+    }
 
 }

@@ -19,7 +19,7 @@ class ViewModelsTests: XCTestCase {
         let mockView = MockLoginViewController()
         let mockCoordinator = MockLoginCoordinator()
         
-        let loginVM = LoginViewModel(coordinator: mockCoordinator, view: mockView)
+        let loginVM = LoginViewModel(coordinator: mockCoordinator, view: mockView, usersService: UsersService())
         
         loginVM.requestLoginData(forEmail: "user", password: "123qwe")
         
@@ -35,7 +35,7 @@ class ViewModelsTests: XCTestCase {
         let mockView = MockLoginViewController()
         let mockCoordinator = MockLoginCoordinator()
         
-        let loginVM = LoginViewModel(coordinator: mockCoordinator, view: mockView)
+        let loginVM = LoginViewModel(coordinator: mockCoordinator, view: mockView, usersService: UsersService())
         
         loginVM.requestLoginData(forEmail: "user", password: "123")
         
@@ -50,7 +50,7 @@ class ViewModelsTests: XCTestCase {
     
     func testRequestList() {
         let mockView = MockListViewController()
-        let listVM = ListViewModel(coordinator: ListCoordinator(navigationVC: UINavigationController()), view: mockView)
+        let listVM = ListViewModel(coordinator: ListCoordinator(navigationVC: UINavigationController()), view: mockView, stringService: StringService(session: URLSession(configuration: .default)))
         
         listVM.requestList()
         

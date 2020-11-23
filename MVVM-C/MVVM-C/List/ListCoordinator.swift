@@ -21,7 +21,7 @@ class ListCoordinator: ListCoordinatorInterface {
     
     func start() {
         let listVC = UIStoryboard(name: "ListViewController", bundle: nil).instantiateInitialViewController() as! ListViewController
-        let listVM = ListViewModel(coordinator: self, view: listVC)
+        let listVM = ListViewModel(coordinator: self, view: listVC, stringService: StringService(session: URLSession(configuration: .default)))
         listVC.model = listVM
         
         navigationVC?.pushViewController(listVC, animated: true)
