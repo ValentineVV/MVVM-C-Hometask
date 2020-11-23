@@ -18,7 +18,8 @@ class ListViewModel: ListViewModelInterface {
     
     func requestList() {
         listView?.showLoading()
-        guard let url = URL(string: "https://www.random.org/strings/?num=10&len=8&digits=on&upperalpha=on&loweralpha=on&unique=on&format=plain&rnd=new") else {
+        let urlString = APIHelper.shared.getUrlString()
+        guard let url = URL(string: urlString) else {
             listView?.hideLoading()
             return
         }

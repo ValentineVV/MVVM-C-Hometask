@@ -23,7 +23,7 @@ class LoginViewController: UIViewController, ViewControllerInterface {
         view.addGestureRecognizer(recognizer)
     }
     
-    @objc func removeKeyboard() {
+    @objc private func removeKeyboard() {
         view.endEditing(true)
     }
     
@@ -43,7 +43,7 @@ class LoginViewController: UIViewController, ViewControllerInterface {
         activityIndicator.removeFromSuperview()
     }
     
-    @IBAction func loginButtonClicked(_ sender: Any) {
+    @IBAction private func loginButtonClicked(_ sender: Any) {
         let email = emailTextField.text ?? ""
         let password = pswTextField.text ?? ""
         

@@ -13,6 +13,10 @@ class APIHelper {
     
     static let shared = APIHelper()
     
+    func getUrlString() -> String {
+        return "https://www.random.org/strings/?num=10&len=8&digits=on&upperalpha=on&loweralpha=on&unique=on&format=plain&rnd=new"
+    }
+    
     func getUsersList(completion: @escaping ([LoginModel]) -> ()) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
             completion([.init(email: "user", password: "123qwe")])

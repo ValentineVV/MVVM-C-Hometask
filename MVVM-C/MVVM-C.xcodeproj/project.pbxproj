@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A0C1989256B9FD80061B03E /* ViewModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C1988256B9FD80061B03E /* ViewModelsTests.swift */; };
+		0A0C198E256BA0230061B03E /* MockCoordinators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C198D256BA0230061B03E /* MockCoordinators.swift */; };
+		0A0C1993256BA0F20061B03E /* MockViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C1992256BA0F20061B03E /* MockViews.swift */; };
 		0A7CF78F256A6F2C0085E7D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7CF78E256A6F2C0085E7D8 /* AppDelegate.swift */; };
 		0A7CF796256A6F2C0085E7D8 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A7CF794256A6F2C0085E7D8 /* LoginViewController.storyboard */; };
 		0A7CF798256A6F2D0085E7D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A7CF797256A6F2D0085E7D8 /* Assets.xcassets */; };
 		0A7CF79B256A6F2D0085E7D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A7CF799256A6F2D0085E7D8 /* LaunchScreen.storyboard */; };
-		0A7CF7A6256A6F2E0085E7D8 /* MVVM_CTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7CF7A5256A6F2E0085E7D8 /* MVVM_CTests.swift */; };
 		0A7CF7B1256A6F2E0085E7D8 /* MVVM_CUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7CF7B0256A6F2E0085E7D8 /* MVVM_CUITests.swift */; };
 		0A7CF7C5256A72CC0085E7D8 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7CF7C4256A72CC0085E7D8 /* LoginCoordinator.swift */; };
 		0A7CF7CA256A73890085E7D8 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7CF7C9256A73890085E7D8 /* Coordinator.swift */; };
@@ -26,6 +28,8 @@
 		0A7CF80B256A85CB0085E7D8 /* ListViewModelInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7CF80A256A85CB0085E7D8 /* ListViewModelInterface.swift */; };
 		0A7CF810256A85FB0085E7D8 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7CF80F256A85FB0085E7D8 /* ListViewModel.swift */; };
 		0A7CF815256A87720085E7D8 /* ListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A7CF814256A87720085E7D8 /* ListViewController.storyboard */; };
+		0A7CF821256A9DC20085E7D8 /* CoordinatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7CF820256A9DC20085E7D8 /* CoordinatorsTests.swift */; };
+		0A7CF829256AA39F0085E7D8 /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7CF828256AA39F0085E7D8 /* NetworkTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A0C1988256B9FD80061B03E /* ViewModelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelsTests.swift; sourceTree = "<group>"; };
+		0A0C198D256BA0230061B03E /* MockCoordinators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCoordinators.swift; sourceTree = "<group>"; };
+		0A0C1992256BA0F20061B03E /* MockViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockViews.swift; sourceTree = "<group>"; };
 		0A7CF78B256A6F2C0085E7D8 /* MVVM-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A7CF78E256A6F2C0085E7D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A7CF795256A6F2C0085E7D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoginViewController.storyboard; sourceTree = "<group>"; };
@@ -53,7 +60,6 @@
 		0A7CF79A256A6F2D0085E7D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A7CF79C256A6F2D0085E7D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A7CF7A1256A6F2E0085E7D8 /* MVVM-CTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM-CTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A7CF7A5256A6F2E0085E7D8 /* MVVM_CTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_CTests.swift; sourceTree = "<group>"; };
 		0A7CF7A7256A6F2E0085E7D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A7CF7AC256A6F2E0085E7D8 /* MVVM-CUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM-CUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A7CF7B0256A6F2E0085E7D8 /* MVVM_CUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_CUITests.swift; sourceTree = "<group>"; };
@@ -71,6 +77,8 @@
 		0A7CF80A256A85CB0085E7D8 /* ListViewModelInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModelInterface.swift; sourceTree = "<group>"; };
 		0A7CF80F256A85FB0085E7D8 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		0A7CF814256A87720085E7D8 /* ListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListViewController.storyboard; sourceTree = "<group>"; };
+		0A7CF820256A9DC20085E7D8 /* CoordinatorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorsTests.swift; sourceTree = "<group>"; };
+		0A7CF828256AA39F0085E7D8 /* NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +145,11 @@
 		0A7CF7A4256A6F2E0085E7D8 /* MVVM-CTests */ = {
 			isa = PBXGroup;
 			children = (
-				0A7CF7A5256A6F2E0085E7D8 /* MVVM_CTests.swift */,
+				0A7CF820256A9DC20085E7D8 /* CoordinatorsTests.swift */,
+				0A7CF828256AA39F0085E7D8 /* NetworkTests.swift */,
+				0A0C1988256B9FD80061B03E /* ViewModelsTests.swift */,
+				0A0C198D256BA0230061B03E /* MockCoordinators.swift */,
+				0A0C1992256BA0F20061B03E /* MockViews.swift */,
 				0A7CF7A7256A6F2E0085E7D8 /* Info.plist */,
 			);
 			path = "MVVM-CTests";
@@ -328,7 +340,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A7CF7A6256A6F2E0085E7D8 /* MVVM_CTests.swift in Sources */,
+				0A0C1989256B9FD80061B03E /* ViewModelsTests.swift in Sources */,
+				0A7CF829256AA39F0085E7D8 /* NetworkTests.swift in Sources */,
+				0A0C198E256BA0230061B03E /* MockCoordinators.swift in Sources */,
+				0A7CF821256A9DC20085E7D8 /* CoordinatorsTests.swift in Sources */,
+				0A0C1993256BA0F20061B03E /* MockViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
