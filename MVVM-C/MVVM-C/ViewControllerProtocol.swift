@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol ViewControllerInterface: class {
+protocol ViewControllerProtocol: class {
     
     func showLoading()
     func hideLoading()

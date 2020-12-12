@@ -7,7 +7,7 @@
 
 @testable import MVVM_C
 
-class MockLoginCoordinator: LoginCoordinatorInterface {
+class MockLoginCoordinator: LoginCoordinatorProtocol {
     var didCallLoginSuccessfully = false
     func start() {
         

@@ -45,14 +45,34 @@
                                     <action selector="loginButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H8U-5V-hGG"/>
                                 </connections>
                             </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bZe-Ig-EEu">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqv-Ha-RJ3">
+                                        <rect key="frame" x="139" y="14.5" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstItem="fqv-Ha-RJ3" firstAttribute="centerX" secondItem="bZe-Ig-EEu" secondAttribute="centerX" id="8fa-kK-aq9"/>
+                                    <constraint firstItem="fqv-Ha-RJ3" firstAttribute="centerY" secondItem="bZe-Ig-EEu" secondAttribute="centerY" id="LUU-Bx-UFr"/>
+                                    <constraint firstAttribute="height" constant="50" id="QHu-Aa-X30"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bZe-Ig-EEu" secondAttribute="trailing" id="3Br-3b-WBW"/>
                             <constraint firstItem="6RF-DJ-g15" firstAttribute="top" secondItem="j68-gu-gnn" secondAttribute="bottom" constant="20" id="7Zd-Nm-brq"/>
+                            <constraint firstItem="bZe-Ig-EEu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8X6-3z-4kt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j68-gu-gnn" secondAttribute="trailing" constant="15" id="9ej-jN-dmE"/>
                             <constraint firstItem="Pf8-q6-DZz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BmA-go-rmG"/>
                             <constraint firstItem="Pf8-q6-DZz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="140" id="H33-Ub-2Ae"/>
+                            <constraint firstItem="bZe-Ig-EEu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UZk-hH-CsQ"/>
                             <constraint firstItem="j68-gu-gnn" firstAttribute="top" secondItem="Pf8-q6-DZz" secondAttribute="bottom" constant="50" id="VBE-jG-vxQ"/>
                             <constraint firstItem="6RF-DJ-g15" firstAttribute="trailing" secondItem="j68-gu-gnn" secondAttribute="trailing" id="Vvp-KM-31u"/>
                             <constraint firstItem="rS8-o8-bgf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZO4-2M-gRb"/>
@@ -63,6 +83,8 @@
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="j68-gu-gnn" id="tIB-Pw-YNO"/>
+                        <outlet property="errorLabel" destination="fqv-Ha-RJ3" id="Qhq-iP-2jf"/>
+                        <outlet property="errorView" destination="bZe-Ig-EEu" id="Lhx-3N-4kX"/>
                         <outlet property="pswTextField" destination="6RF-DJ-g15" id="JW3-hu-Slu"/>
                     </connections>
                 </viewController>
@@ -77,6 +99,9 @@
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

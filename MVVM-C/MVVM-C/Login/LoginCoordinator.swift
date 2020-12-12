@@ -7,16 +7,16 @@
 
 import UIKit
 
-protocol LoginCoordinatorInterface: Coordinator {
+protocol LoginCoordinatorProtocol: Coordinator {
     func didLoginSuccessfully()
 }
 
-class LoginCoordinator: LoginCoordinatorInterface {
+class LoginCoordinator: LoginCoordinatorProtocol {
     
     private weak var navigationVC: UINavigationController?
 
     func start() {
-        let loginVC = UIStoryboard(name: "LoginViewController", bundle: nil).instantiateInitialViewController() as! LoginViewController
+        guard let loginVC = UIStoryboard(name: "LoginViewController", bundle: nil).instantiateInitialViewController() as? LoginViewController else { return }
         let loginVM = LoginViewModel(coordinator: self, view: loginVC, usersService: UsersService())
         loginVC.model = loginVM
         

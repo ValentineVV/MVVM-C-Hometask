@@ -7,7 +7,7 @@
 
 @testable import MVVM_C
 
-class MockLoginViewController: ViewControllerInterface {
+class MockLoginViewController: LoginViewControllerProtocol {
     var didCallShowLoading = false
     var didCallHideLoading = false
     
@@ -19,12 +19,16 @@ class MockLoginViewController: ViewControllerInterface {
          didCallHideLoading = true
     }
     
+    func showError(_ error: LoginError) {
+        
+    }
+    
 }
 
-class MockListViewController: ListViewControllerInterface {
+class MockListViewController: ListViewControllerProtocol {
     var didCallHideLoading = false
     var didCallShowLoading = false
-    var list: [String] = []
+    var didCallUpdateList = false
     
     func hideLoading() {
         didCallHideLoading = true
@@ -34,8 +38,8 @@ class MockListViewController: ListViewControllerInterface {
         didCallShowLoading = true
     }
     
-    func updateList(with strings: [String]) {
-        list = strings
+    func updateList() {
+        didCallUpdateList = true
     }
     
 }

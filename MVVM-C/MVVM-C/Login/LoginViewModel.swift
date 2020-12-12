@@ -7,30 +7,34 @@
 
 import UIKit
 
-class LoginViewModel: LoginViewModelInterface {
+protocol LoginViewModelProtocol {
+    func requestLoginData(forCredentials creds: LoginModel)
+}
+
+class LoginViewModel: LoginViewModelProtocol {
     
-    weak var coordinator: LoginCoordinatorInterface?
-    weak var view: ViewControllerInterface?
+    weak var coordinator: LoginCoordinatorProtocol?
+    weak var view: LoginViewControllerProtocol?
     var usersService: UsersService
     
-    init(coordinator: LoginCoordinatorInterface, view: ViewControllerInterface, usersService: UsersService) {
+    init(coordinator: LoginCoordinatorProtocol, view: LoginViewControllerProtocol, usersService: UsersService = UsersService()) {
         self.coordinator = coordinator
         self.view = view
         self.usersService = usersService
     }
     
-    func requestLoginData(forEmail email: String, password: String) {
+    func requestLoginData(forCredentials creds: LoginModel) {
         view?.showLoading()
-        usersService.getUsersList {[weak self] userList in
-            let userExist = userList.contains {
-                $0.email == email && $0.password == password
-            }
-            if userExist {
+        usersService.login(withCredentials: creds) { [weak self] (result) in
+            switch result {
+            
+            case .success(_):
                 self?.coordinator?.didLoginSuccessfully()
+            case .failure(let error):
+                self?.view?.showError(error)
             }
             self?.view?.hideLoading()
         }
-        
     }
     
 }

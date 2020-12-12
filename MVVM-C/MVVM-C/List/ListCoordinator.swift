@@ -7,11 +7,11 @@
 
 import UIKit
 
-protocol ListCoordinatorInterface: Coordinator {
+protocol ListCoordinatorProtocol: Coordinator {
     
 }
 
-class ListCoordinator: ListCoordinatorInterface {
+class ListCoordinator: ListCoordinatorProtocol {
     
     private weak var navigationVC: UINavigationController?
     
@@ -20,9 +20,9 @@ class ListCoordinator: ListCoordinatorInterface {
     }
     
     func start() {
-        let listVC = UIStoryboard(name: "ListViewController", bundle: nil).instantiateInitialViewController() as! ListViewController
-        let listVM = ListViewModel(coordinator: self, view: listVC, stringService: StringService(session: URLSession(configuration: .default)))
-        listVC.model = listVM
+        guard let listVC = UIStoryboard(name: "ListViewController", bundle: nil).instantiateInitialViewController() as? ListViewController else { return }
+        let listVM = ListViewModel(coordinator: self, view: listVC)
+        listVC.viewModel = listVM
         
         navigationVC?.pushViewController(listVC, animated: true)
     }

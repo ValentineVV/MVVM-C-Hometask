@@ -7,22 +7,24 @@
 
 import Foundation
 
-protocol StringServiceInterface {
-    func getUrlString() -> String
-    func getStringsList(fromUrl url: URL, completionHandler: @escaping ([String]) -> Void)
+protocol StringServiceProtocol {
+    func getStringsList(completionHandler: @escaping ([String]) -> Void)
 }
 
-struct StringService: StringServiceInterface {
+struct StringService: StringServiceProtocol {
     
     let session: URLSession
     
-    func getUrlString() -> String {
+    private func getUrlString() -> String {
         return "https://www.random.org/strings/?num=10&len=8&digits=on&upperalpha=on&loweralpha=on&unique=on&format=plain&rnd=new"
     }
     
-    func getStringsList(fromUrl url: URL, completionHandler: @escaping ([String]) -> Void) {
+    func getStringsList(completionHandler: @escaping ([String]) -> Void) {
+        let urlString = getUrlString()
+        guard let url = URL(string: urlString) else { return }
         let task = session.dataTask(with: url) { (data, response, error) in
-            let list = String(decoding: data!, as: UTF8.self).split(separator: "\n").map {
+            guard let data = data else { return }
+            let list = String(decoding: data, as: UTF8.self).split(separator: "\n").map {
                 String($0)
             }
             DispatchQueue.main.async {

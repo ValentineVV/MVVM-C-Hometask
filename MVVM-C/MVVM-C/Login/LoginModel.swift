@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct LoginModel {
+struct LoginModel: Equatable {
     let email: String
     let password: String
 }

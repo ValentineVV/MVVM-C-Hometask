@@ -7,12 +7,14 @@
 
 import Foundation
 
-class ListViewModel: ListViewModelInterface {
-    weak var listCoordinator: ListCoordinatorInterface?
-    weak var listView: ListViewControllerInterface?
+class ListViewModel: ListViewModelProtocol {
+    var list: [String] = []
+
+    weak var listCoordinator: ListCoordinatorProtocol?
+    weak var listView: ListViewControllerProtocol?
     var strService: StringService
     
-    init(coordinator: ListCoordinatorInterface, view: ListViewControllerInterface, stringService: StringService) {
+    init(coordinator: ListCoordinatorProtocol, view: ListViewControllerProtocol, stringService: StringService = StringService(session: URLSession(configuration: .default))) {
         listCoordinator = coordinator
         listView = view
         strService = stringService
@@ -20,13 +22,9 @@ class ListViewModel: ListViewModelInterface {
     
     func requestList() {
         listView?.showLoading()
-        let urlString = strService.getUrlString()
-        guard let url = URL(string: urlString) else {
-            listView?.hideLoading()
-            return
-        }
-        strService.getStringsList(fromUrl: url) { [weak self] list in
-            self?.listView?.updateList(with: list)
+        strService.getStringsList { [weak self] list in
+            self?.list = list
+            self?.listView?.updateList()
             self?.listView?.hideLoading()
         }
         

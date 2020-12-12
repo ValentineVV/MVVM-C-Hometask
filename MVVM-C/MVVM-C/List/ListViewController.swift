@@ -7,32 +7,29 @@
 
 import UIKit
 
-protocol ListViewControllerInterface: ViewControllerInterface {
-    func updateList(with strings: [String])
+protocol ListViewControllerProtocol: ViewControllerProtocol {
+    func updateList()
 }
 
-class ListViewController: UIViewController, ListViewControllerInterface {
+class ListViewController: UIViewController, ListViewControllerProtocol {
     
     
     @IBOutlet weak var tableView: UITableView!
     
-    var model: ListViewModel!
+    var viewModel: ListViewModel!
     private var activityIndicator: UIActivityIndicatorView!
-    private var list: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "List screen"
         
-        model.requestList()
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        tableView.delegate = self
+        viewModel.requestList()
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "listViewCell")
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
     }
     
-    func updateList(with strings: [String]) {
-        list = strings
+    func updateList() {
         tableView.reloadData()
     }
     
@@ -53,16 +50,16 @@ class ListViewController: UIViewController, ListViewControllerInterface {
     }
 }
 
-extension ListViewController: UITableViewDelegate, UITableViewDataSource {
+extension ListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return list.count
+        return viewModel.list.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = list[indexPath.row]
+        cell.textLabel?.text = viewModel.list[indexPath.row]
         cell.selectionStyle = .none
         
         return cell

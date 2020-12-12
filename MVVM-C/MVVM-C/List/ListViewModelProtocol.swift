@@ -7,6 +7,7 @@
 
 import Foundation
 
-protocol ListViewModelInterface {
+protocol ListViewModelProtocol {
+    var list: [String] { get }
     func requestList()
 }

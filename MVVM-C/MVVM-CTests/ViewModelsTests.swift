@@ -21,7 +21,7 @@ class ViewModelsTests: XCTestCase {
         
         let loginVM = LoginViewModel(coordinator: mockCoordinator, view: mockView, usersService: UsersService())
         
-        loginVM.requestLoginData(forEmail: "user", password: "123qwe")
+        loginVM.requestLoginData(forCredentials: LoginModel(email: "user", password: "123qwe"))
         
         expectToEventually(
             mockView.didCallHideLoading == true
@@ -37,7 +37,7 @@ class ViewModelsTests: XCTestCase {
         
         let loginVM = LoginViewModel(coordinator: mockCoordinator, view: mockView, usersService: UsersService())
         
-        loginVM.requestLoginData(forEmail: "user", password: "123")
+        loginVM.requestLoginData(forCredentials: LoginModel(email: "user", password: "123"))
         
         expectToEventually(
             mockView.didCallHideLoading == true
@@ -57,7 +57,7 @@ class ViewModelsTests: XCTestCase {
         expectToEventually(
             mockView.didCallHideLoading == true
                 && mockView.didCallShowLoading == true
-                && mockView.list.count > 0,
+                && mockView.didCallUpdateList,
             timeout: 3
         )
     }

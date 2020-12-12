@@ -7,15 +7,29 @@
 
 import UIKit
 
-protocol UsersServiceInterface {
-    func getUsersList(completion: @escaping ([LoginModel]) -> ())
+protocol UsersServiceProtocol {
+//    func getUsersList(completion: @escaping ([LoginModel]) -> ())
+    func login(withCredentials creds: LoginModel, completion: @escaping (Result<Bool, LoginError>) -> ())
 }
 
-struct UsersService: UsersServiceInterface {
+struct UsersService: UsersServiceProtocol {
     
-    func getUsersList(completion: @escaping ([LoginModel]) -> ()) {
+    private func getUsersList(completion: @escaping ([LoginModel]) -> ()) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
             completion([.init(email: "user", password: "123qwe")])
+        }
+    }
+    
+    func login(withCredentials creds: LoginModel, completion: @escaping (Result<Bool, LoginError>) -> ()) {
+        
+        getUsersList { userList in
+            
+            guard userList.contains(creds) else {
+                completion(.failure(.noSuchUser))
+                return
+            }
+            
+            completion(.success(true))
         }
     }
     

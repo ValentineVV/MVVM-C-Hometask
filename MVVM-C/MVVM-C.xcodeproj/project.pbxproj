@@ -21,14 +21,13 @@
 		0A7CF7C5256A72CC0085E7D8 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7CF7C4256A72CC0085E7D8 /* LoginCoordinator.swift */; };
 		0A7CF7CA256A73890085E7D8 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7CF7C9256A73890085E7D8 /* Coordinator.swift */; };
 		0A7CF7CF256A74DE0085E7D8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7CF7CE256A74DE0085E7D8 /* LoginViewController.swift */; };
-		0A7CF7D4256A751F0085E7D8 /* ViewControllerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7CF7D3256A751F0085E7D8 /* ViewControllerInterface.swift */; };
-		0A7CF7DA256A75DF0085E7D8 /* LoginViewModelInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7CF7D9256A75DF0085E7D8 /* LoginViewModelInterface.swift */; };
+		0A7CF7D4256A751F0085E7D8 /* ViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7CF7D3256A751F0085E7D8 /* ViewControllerProtocol.swift */; };
 		0A7CF7E5256A7A000085E7D8 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7CF7E4256A7A000085E7D8 /* LoginViewModel.swift */; };
 		0A7CF7F0256A80D20085E7D8 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7CF7EF256A80D20085E7D8 /* LoginModel.swift */; };
 		0A7CF7F5256A81120085E7D8 /* UsersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7CF7F4256A81120085E7D8 /* UsersService.swift */; };
 		0A7CF7FB256A84170085E7D8 /* ListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7CF7FA256A84170085E7D8 /* ListCoordinator.swift */; };
 		0A7CF800256A84A20085E7D8 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7CF7FF256A84A20085E7D8 /* ListViewController.swift */; };
-		0A7CF80B256A85CB0085E7D8 /* ListViewModelInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7CF80A256A85CB0085E7D8 /* ListViewModelInterface.swift */; };
+		0A7CF80B256A85CB0085E7D8 /* ListViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7CF80A256A85CB0085E7D8 /* ListViewModelProtocol.swift */; };
 		0A7CF810256A85FB0085E7D8 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7CF80F256A85FB0085E7D8 /* ListViewModel.swift */; };
 		0A7CF815256A87720085E7D8 /* ListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A7CF814256A87720085E7D8 /* ListViewController.storyboard */; };
 		0A7CF821256A9DC20085E7D8 /* CoordinatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7CF820256A9DC20085E7D8 /* CoordinatorsTests.swift */; };
@@ -73,14 +72,13 @@
 		0A7CF7C4256A72CC0085E7D8 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		0A7CF7C9256A73890085E7D8 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		0A7CF7CE256A74DE0085E7D8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		0A7CF7D3256A751F0085E7D8 /* ViewControllerInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInterface.swift; sourceTree = "<group>"; };
-		0A7CF7D9256A75DF0085E7D8 /* LoginViewModelInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelInterface.swift; sourceTree = "<group>"; };
+		0A7CF7D3256A751F0085E7D8 /* ViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerProtocol.swift; sourceTree = "<group>"; };
 		0A7CF7E4256A7A000085E7D8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		0A7CF7EF256A80D20085E7D8 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		0A7CF7F4256A81120085E7D8 /* UsersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersService.swift; sourceTree = "<group>"; };
 		0A7CF7FA256A84170085E7D8 /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
 		0A7CF7FF256A84A20085E7D8 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		0A7CF80A256A85CB0085E7D8 /* ListViewModelInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModelInterface.swift; sourceTree = "<group>"; };
+		0A7CF80A256A85CB0085E7D8 /* ListViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModelProtocol.swift; sourceTree = "<group>"; };
 		0A7CF80F256A85FB0085E7D8 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		0A7CF814256A87720085E7D8 /* ListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListViewController.storyboard; sourceTree = "<group>"; };
 		0A7CF820256A9DC20085E7D8 /* CoordinatorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorsTests.swift; sourceTree = "<group>"; };
@@ -147,7 +145,7 @@
 			children = (
 				0A7CF78E256A6F2C0085E7D8 /* AppDelegate.swift */,
 				0A7CF7C9256A73890085E7D8 /* Coordinator.swift */,
-				0A7CF7D3256A751F0085E7D8 /* ViewControllerInterface.swift */,
+				0A7CF7D3256A751F0085E7D8 /* ViewControllerProtocol.swift */,
 				0A7CF7D8256A75B20085E7D8 /* Login */,
 				0A7CF7F9256A83FD0085E7D8 /* List */,
 				0A7CF797256A6F2D0085E7D8 /* Assets.xcassets */,
@@ -186,7 +184,6 @@
 				0A7CF7CE256A74DE0085E7D8 /* LoginViewController.swift */,
 				0A7CF794256A6F2C0085E7D8 /* LoginViewController.storyboard */,
 				0A7CF7E4256A7A000085E7D8 /* LoginViewModel.swift */,
-				0A7CF7D9256A75DF0085E7D8 /* LoginViewModelInterface.swift */,
 				0A7CF7EF256A80D20085E7D8 /* LoginModel.swift */,
 				0A7CF7F4256A81120085E7D8 /* UsersService.swift */,
 			);
@@ -200,7 +197,7 @@
 				0A7CF7FF256A84A20085E7D8 /* ListViewController.swift */,
 				0A7CF814256A87720085E7D8 /* ListViewController.storyboard */,
 				0A7CF80F256A85FB0085E7D8 /* ListViewModel.swift */,
-				0A7CF80A256A85CB0085E7D8 /* ListViewModelInterface.swift */,
+				0A7CF80A256A85CB0085E7D8 /* ListViewModelProtocol.swift */,
 				0A0C19A3256BA9C40061B03E /* StringService.swift */,
 			);
 			path = List;
@@ -343,13 +340,12 @@
 				0A7CF7CA256A73890085E7D8 /* Coordinator.swift in Sources */,
 				0A7CF7C5256A72CC0085E7D8 /* LoginCoordinator.swift in Sources */,
 				0A7CF7CF256A74DE0085E7D8 /* LoginViewController.swift in Sources */,
-				0A7CF80B256A85CB0085E7D8 /* ListViewModelInterface.swift in Sources */,
+				0A7CF80B256A85CB0085E7D8 /* ListViewModelProtocol.swift in Sources */,
 				0A7CF78F256A6F2C0085E7D8 /* AppDelegate.swift in Sources */,
-				0A7CF7DA256A75DF0085E7D8 /* LoginViewModelInterface.swift in Sources */,
 				0A7CF800256A84A20085E7D8 /* ListViewController.swift in Sources */,
 				0A7CF7F0256A80D20085E7D8 /* LoginModel.swift in Sources */,
 				0A7CF810256A85FB0085E7D8 /* ListViewModel.swift in Sources */,
-				0A7CF7D4256A751F0085E7D8 /* ViewControllerInterface.swift in Sources */,
+				0A7CF7D4256A751F0085E7D8 /* ViewControllerProtocol.swift in Sources */,
 				0A7CF7FB256A84170085E7D8 /* ListCoordinator.swift in Sources */,
 				0A7CF7E5256A7A000085E7D8 /* LoginViewModel.swift in Sources */,
 			);
