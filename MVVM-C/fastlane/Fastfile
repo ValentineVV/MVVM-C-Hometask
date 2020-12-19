@@ -1,0 +1,64 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Description of what the lane does"
+  lane :buildAndTest do
+    sendStartMessage
+    build
+    runTest
+    sendEndMessage
+  end
+end
+
+$targetName = "MVVM-C"
+$version = get_version_number(
+  xcodeproj: "MVVM-C.xcodeproj",
+  target: $targetName
+  )
+$teams_url = "https://teams.microsoft.com/l/channel/19%3a44de3b196acc42f5a30b6aeb767c3cdf%40thread.tacv2/General?groupId=6ca85770-699b-4f04-89dc-e2e978c2e7ed&tenantId=b41b72d0-4e9f-4c26-8a69-f949f367c91d"
+
+def build
+gym(
+    scheme: $targetName,
+    export_method: "development",
+    output_directory: "builds/" + $targetName ,
+    output_name: $targetName,
+    clean: true
+  )
+
+end
+
+def runTest
+  run_tests(scheme: $targetName)
+end
+
+def sendStartMessage
+slack(
+  slack_url: "https://hooks.slack.com/services/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",
+  username: "Fastlane",
+  message: "Started building " + $targetName + " " + git_branch + " " + $version
+)
+end
+
+def sendEndMessage
+  slack(
+  slack_url: "https://hooks.slack.com/services/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",
+  username: "Fastlane",
+  message: "Built " + $targetName + " " + git_branch + " " + $version
+)
+end

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='MVVM-CUITests.xctest' tests='9' failures='0'>
+  <testsuite name='MVVM_CTests.CoordinatorsTests' tests='3' failures='0'>
+    <testcase classname='MVVM_CTests.CoordinatorsTests' name='testListCoordinatorToStart' time='0.009'/>
+    <testcase classname='MVVM_CTests.CoordinatorsTests' name='testLoginCoordinatorToStart' time='0.003'/>
+    <testcase classname='MVVM_CTests.CoordinatorsTests' name='testSuccessfullLogin' time='0.003'/>
+  </testsuite>
+  <testsuite name='MVVM_CTests.NetworkTests' tests='1' failures='0'>
+    <testcase classname='MVVM_CTests.NetworkTests' name='testGetStringsFromJSON' time='0.016'/>
+  </testsuite>
+  <testsuite name='MVVM_CTests.ViewModelsTests' tests='3' failures='0'>
+    <testcase classname='MVVM_CTests.ViewModelsTests' name='testGetUsersFail' time='1.511'/>
+    <testcase classname='MVVM_CTests.ViewModelsTests' name='testGetUsersSuccess' time='1.510'/>
+    <testcase classname='MVVM_CTests.ViewModelsTests' name='testRequestList' time='0.600'/>
+  </testsuite>
+  <testsuite name='MVVM_CUITests.MVVM_CUITests' tests='2' failures='0'>
+    <testcase classname='MVVM_CUITests.MVVM_CUITests' name='testExample' time='1.706'/>
+    <testcase classname='MVVM_CUITests.MVVM_CUITests' name='testLaunchPerformance' time='14.989'/>
+  </testsuite>
+</testsuites>
