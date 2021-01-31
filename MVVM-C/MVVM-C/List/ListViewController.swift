@@ -12,27 +12,26 @@ protocol ListViewControllerProtocol: ViewControllerProtocol {
 }
 
 class ListViewController: UIViewController, ListViewControllerProtocol {
-    
-    
+
     @IBOutlet weak var tableView: UITableView!
-    
+
     var viewModel: ListViewModel!
     private var activityIndicator: UIActivityIndicatorView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "List screen"
-        
+
         viewModel.requestList()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "listViewCell")
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
     }
-    
+
     func updateList() {
         tableView.reloadData()
     }
-    
+
     func showLoading() {
         activityIndicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
         activityIndicator.center = tableView.center
@@ -43,7 +42,7 @@ class ListViewController: UIViewController, ListViewControllerProtocol {
         tableView.addSubview(activityIndicator)
         activityIndicator.startAnimating()
     }
-    
+
     func hideLoading() {
         activityIndicator.stopAnimating()
         activityIndicator.removeFromSuperview()
@@ -51,17 +50,17 @@ class ListViewController: UIViewController, ListViewControllerProtocol {
 }
 
 extension ListViewController: UITableViewDataSource {
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.list.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = viewModel.list[indexPath.row]
         cell.selectionStyle = .none
-        
+
         return cell
     }
 }

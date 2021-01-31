@@ -13,13 +13,13 @@ class ListViewModel: ListViewModelProtocol {
     weak var listCoordinator: ListCoordinatorProtocol?
     weak var listView: ListViewControllerProtocol?
     var strService: StringService
-    
+
     init(coordinator: ListCoordinatorProtocol, view: ListViewControllerProtocol, stringService: StringService = StringService(session: URLSession(configuration: .default))) {
         listCoordinator = coordinator
         listView = view
         strService = stringService
     }
-    
+
     func requestList() {
         listView?.showLoading()
         strService.getStringsList { [weak self] list in
@@ -27,6 +27,6 @@ class ListViewModel: ListViewModelProtocol {
             self?.listView?.updateList()
             self?.listView?.hideLoading()
         }
-        
+
     }
 }

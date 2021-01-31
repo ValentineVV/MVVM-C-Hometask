@@ -18,35 +18,35 @@ protocol LoginViewControllerProtocol: ViewControllerProtocol {
 }
 
 class LoginViewController: UIViewController, LoginViewControllerProtocol {
-    
+
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var pswTextField: UITextField!
     @IBOutlet weak var errorView: UIView!
     @IBOutlet weak var errorLabel: UILabel!
-    
+
     var model: LoginViewModelProtocol!
     private var activityIndicator: UIActivityIndicatorView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Login screen"
-        
+
         emailTextField.delegate = self
         pswTextField.delegate = self
-        
+
         let recognizer = UITapGestureRecognizer(target: self, action: #selector(removeKeyboard))
         view.addGestureRecognizer(recognizer)
     }
-    
+
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationItem.backButtonTitle = "Log out"
     }
-    
+
     @objc private func removeKeyboard() {
         view.endEditing(true)
     }
-    
+
     func showLoading() {
         activityIndicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
         activityIndicator.center = view.center
@@ -57,36 +57,36 @@ class LoginViewController: UIViewController, LoginViewControllerProtocol {
         view.addSubview(activityIndicator)
         activityIndicator.startAnimating()
     }
-    
+
     func hideLoading() {
         activityIndicator.stopAnimating()
         activityIndicator.removeFromSuperview()
     }
-    
+
     @IBAction private func loginButtonClicked(_ sender: Any) {
         login()
     }
-    
+
     private func login() {
         let emailText = emailTextField.text
         let passwordText = pswTextField.text
-        
+
         guard let email = emailText, email != "" else {
             showError(.emptyEmail)
             return
         }
-        
+
         guard let password = passwordText, password != "" else {
             showError(.emptyPassword)
             return
         }
-        
+
         model.requestLoginData(forCredentials: LoginModel(email: email, password: password))
     }
-    
+
     func showError(_ error: LoginError) {
         switch error {
-        
+
         case .emptyEmail:
             errorLabel.text = "Email field is empty"
         case .emptyPassword:
@@ -96,11 +96,11 @@ class LoginViewController: UIViewController, LoginViewControllerProtocol {
         }
         errorView.isHidden = false
     }
-    
+
 }
 
 extension LoginViewController: UITextFieldDelegate {
-    
+
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if emailTextField.isFirstResponder {
             pswTextField.becomeFirstResponder()
@@ -110,10 +110,10 @@ extension LoginViewController: UITextFieldDelegate {
         }
         return true
     }
-    
+
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         errorView.isHidden = true
         return true
     }
-    
+
 }

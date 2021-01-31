@@ -8,8 +8,8 @@
 import Foundation
 
 protocol ViewControllerProtocol: class {
-    
+
     func showLoading()
     func hideLoading()
-    
+
 }

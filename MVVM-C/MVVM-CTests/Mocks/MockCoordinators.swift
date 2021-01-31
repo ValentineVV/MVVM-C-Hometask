@@ -10,12 +10,12 @@
 class MockLoginCoordinator: LoginCoordinatorProtocol {
     var didCallLoginSuccessfully = false
     func start() {
-        
+
     }
-    
+
     func didLoginSuccessfully() {
         didCallLoginSuccessfully = true
-        
+
     }
-    
+
 }

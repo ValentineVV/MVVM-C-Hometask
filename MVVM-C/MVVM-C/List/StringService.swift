@@ -12,17 +12,17 @@ protocol StringServiceProtocol {
 }
 
 struct StringService: StringServiceProtocol {
-    
+
     let session: URLSession
-    
+
     private func getUrlString() -> String {
         return "https://www.random.org/strings/?num=10&len=8&digits=on&upperalpha=on&loweralpha=on&unique=on&format=plain&rnd=new"
     }
-    
+
     func getStringsList(completionHandler: @escaping ([String]) -> Void) {
         let urlString = getUrlString()
         guard let url = URL(string: urlString) else { return }
-        let task = session.dataTask(with: url) { (data, response, error) in
+        let task = session.dataTask(with: url) { (data, _, _) in
             guard let data = data else { return }
             let list = String(decoding: data, as: UTF8.self).split(separator: "\n").map {
                 String($0)
@@ -31,8 +31,8 @@ struct StringService: StringServiceProtocol {
                 completionHandler(list)
             }
         }
-        
+
         task.resume()
     }
-    
+
 }

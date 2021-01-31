@@ -11,9 +11,9 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
+
     var mainCoordinator: Coordinator?
-    
+
     private let navigationController: UINavigationController = {
         let navigationController = UINavigationController()
         return navigationController
@@ -31,4 +31,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 }
-

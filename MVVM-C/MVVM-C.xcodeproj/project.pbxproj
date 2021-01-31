@@ -13,6 +13,7 @@
 		0A0C19A4256BA9C40061B03E /* StringService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C19A3256BA9C40061B03E /* StringService.swift */; };
 		0A0C19AF256BAD070061B03E /* strings.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0A0C19AE256BAD070061B03E /* strings.txt */; };
 		0A0C19BA256BB2BD0061B03E /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C19B9256BB2BD0061B03E /* MockURLSession.swift */; };
+		0A1CFA3025C6BB1700CF0BF5 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 0A1CFA2F25C6BB1700CF0BF5 /* .swiftlint.yml */; };
 		0A7CF78F256A6F2C0085E7D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7CF78E256A6F2C0085E7D8 /* AppDelegate.swift */; };
 		0A7CF796256A6F2C0085E7D8 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A7CF794256A6F2C0085E7D8 /* LoginViewController.storyboard */; };
 		0A7CF798256A6F2D0085E7D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A7CF797256A6F2D0085E7D8 /* Assets.xcassets */; };
@@ -32,6 +33,9 @@
 		0A7CF815256A87720085E7D8 /* ListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A7CF814256A87720085E7D8 /* ListViewController.storyboard */; };
 		0A7CF821256A9DC20085E7D8 /* CoordinatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7CF820256A9DC20085E7D8 /* CoordinatorsTests.swift */; };
 		0A7CF829256AA39F0085E7D8 /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7CF828256AA39F0085E7D8 /* NetworkTests.swift */; };
+		8603B7E278542E2D6EE1AA71 /* Pods_MVVM_C.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F03FEB76CD6EFCCE51849D /* Pods_MVVM_C.framework */; };
+		CB81DC4233AA4E21B6C2C3C4 /* Pods_MVVM_C_MVVM_CUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23553794DF48CE532C05697C /* Pods_MVVM_C_MVVM_CUITests.framework */; };
+		DF5708DB39E7D3D5D08A244B /* Pods_MVVM_CTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2D42BBE7D697352F1F6F05 /* Pods_MVVM_CTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,12 +56,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01F03FEB76CD6EFCCE51849D /* Pods_MVVM_C.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_C.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		068F36C771315A695591CCE8 /* Pods-MVVM-C-MVVM-CUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-C-MVVM-CUITests.release.xcconfig"; path = "Target Support Files/Pods-MVVM-C-MVVM-CUITests/Pods-MVVM-C-MVVM-CUITests.release.xcconfig"; sourceTree = "<group>"; };
 		0A0C1988256B9FD80061B03E /* ViewModelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelsTests.swift; sourceTree = "<group>"; };
 		0A0C198D256BA0230061B03E /* MockCoordinators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCoordinators.swift; sourceTree = "<group>"; };
 		0A0C1992256BA0F20061B03E /* MockViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockViews.swift; sourceTree = "<group>"; };
 		0A0C19A3256BA9C40061B03E /* StringService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringService.swift; sourceTree = "<group>"; };
 		0A0C19AE256BAD070061B03E /* strings.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = strings.txt; sourceTree = "<group>"; };
 		0A0C19B9256BB2BD0061B03E /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		0A1CFA2F25C6BB1700CF0BF5 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		0A7CF78B256A6F2C0085E7D8 /* MVVM-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A7CF78E256A6F2C0085E7D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A7CF795256A6F2C0085E7D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoginViewController.storyboard; sourceTree = "<group>"; };
@@ -83,6 +90,13 @@
 		0A7CF814256A87720085E7D8 /* ListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListViewController.storyboard; sourceTree = "<group>"; };
 		0A7CF820256A9DC20085E7D8 /* CoordinatorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorsTests.swift; sourceTree = "<group>"; };
 		0A7CF828256AA39F0085E7D8 /* NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
+		1031AEE3836248ADBF79C6AF /* Pods-MVVM-C.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-C.debug.xcconfig"; path = "Target Support Files/Pods-MVVM-C/Pods-MVVM-C.debug.xcconfig"; sourceTree = "<group>"; };
+		117C25271B2562E5E6039D78 /* Pods-MVVM-CTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-CTests.debug.xcconfig"; path = "Target Support Files/Pods-MVVM-CTests/Pods-MVVM-CTests.debug.xcconfig"; sourceTree = "<group>"; };
+		23553794DF48CE532C05697C /* Pods_MVVM_C_MVVM_CUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_C_MVVM_CUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B1AC4B46779985EC6389D85 /* Pods-MVVM-C-MVVM-CUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-C-MVVM-CUITests.debug.xcconfig"; path = "Target Support Files/Pods-MVVM-C-MVVM-CUITests/Pods-MVVM-C-MVVM-CUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4393BAE745F5FEA5DB9A2C33 /* Pods-MVVM-C.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-C.release.xcconfig"; path = "Target Support Files/Pods-MVVM-C/Pods-MVVM-C.release.xcconfig"; sourceTree = "<group>"; };
+		9A2D42BBE7D697352F1F6F05 /* Pods_MVVM_CTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_CTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8386569C1ADC83724861E5E /* Pods-MVVM-CTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-CTests.release.xcconfig"; path = "Target Support Files/Pods-MVVM-CTests/Pods-MVVM-CTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8603B7E278542E2D6EE1AA71 /* Pods_MVVM_C.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF5708DB39E7D3D5D08A244B /* Pods_MVVM_CTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB81DC4233AA4E21B6C2C3C4 /* Pods_MVVM_C_MVVM_CUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,10 +140,13 @@
 		0A7CF782256A6F2C0085E7D8 = {
 			isa = PBXGroup;
 			children = (
+				0A1CFA2F25C6BB1700CF0BF5 /* .swiftlint.yml */,
 				0A7CF78D256A6F2C0085E7D8 /* MVVM-C */,
 				0A7CF7A4256A6F2E0085E7D8 /* MVVM-CTests */,
 				0A7CF7AF256A6F2E0085E7D8 /* MVVM-CUITests */,
 				0A7CF78C256A6F2C0085E7D8 /* Products */,
+				99BE64D6133795F9C5BC9FE3 /* Pods */,
+				115B6B3A9D82E7BAA42CC691 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -203,6 +223,29 @@
 			path = List;
 			sourceTree = "<group>";
 		};
+		115B6B3A9D82E7BAA42CC691 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01F03FEB76CD6EFCCE51849D /* Pods_MVVM_C.framework */,
+				23553794DF48CE532C05697C /* Pods_MVVM_C_MVVM_CUITests.framework */,
+				9A2D42BBE7D697352F1F6F05 /* Pods_MVVM_CTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99BE64D6133795F9C5BC9FE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1031AEE3836248ADBF79C6AF /* Pods-MVVM-C.debug.xcconfig */,
+				4393BAE745F5FEA5DB9A2C33 /* Pods-MVVM-C.release.xcconfig */,
+				3B1AC4B46779985EC6389D85 /* Pods-MVVM-C-MVVM-CUITests.debug.xcconfig */,
+				068F36C771315A695591CCE8 /* Pods-MVVM-C-MVVM-CUITests.release.xcconfig */,
+				117C25271B2562E5E6039D78 /* Pods-MVVM-CTests.debug.xcconfig */,
+				A8386569C1ADC83724861E5E /* Pods-MVVM-CTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -210,7 +253,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A7CF7B5256A6F2E0085E7D8 /* Build configuration list for PBXNativeTarget "MVVM-C" */;
 			buildPhases = (
+				AE7F33D9C31D5584D3E1F792 /* [CP] Check Pods Manifest.lock */,
 				0A7CF787256A6F2C0085E7D8 /* Sources */,
+				0A1CFA2825C6B98900CF0BF5 /* ShellScript */,
 				0A7CF788256A6F2C0085E7D8 /* Frameworks */,
 				0A7CF789256A6F2C0085E7D8 /* Resources */,
 			);
@@ -227,6 +272,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A7CF7B8256A6F2E0085E7D8 /* Build configuration list for PBXNativeTarget "MVVM-CTests" */;
 			buildPhases = (
+				7FEC6B493DC42C9BC45D7FA6 /* [CP] Check Pods Manifest.lock */,
 				0A7CF79D256A6F2E0085E7D8 /* Sources */,
 				0A7CF79E256A6F2E0085E7D8 /* Frameworks */,
 				0A7CF79F256A6F2E0085E7D8 /* Resources */,
@@ -245,6 +291,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A7CF7BB256A6F2E0085E7D8 /* Build configuration list for PBXNativeTarget "MVVM-CUITests" */;
 			buildPhases = (
+				5463CC222D6FFA9057B0EDFD /* [CP] Check Pods Manifest.lock */,
 				0A7CF7A8256A6F2E0085E7D8 /* Sources */,
 				0A7CF7A9256A6F2E0085E7D8 /* Frameworks */,
 				0A7CF7AA256A6F2E0085E7D8 /* Resources */,
@@ -306,6 +353,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A1CFA3025C6BB1700CF0BF5 /* .swiftlint.yml in Resources */,
 				0A7CF79B256A6F2D0085E7D8 /* LaunchScreen.storyboard in Resources */,
 				0A7CF798256A6F2D0085E7D8 /* Assets.xcassets in Resources */,
 				0A7CF796256A6F2C0085E7D8 /* LoginViewController.storyboard in Resources */,
@@ -329,6 +377,92 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A1CFA2825C6B98900CF0BF5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		5463CC222D6FFA9057B0EDFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MVVM-C-MVVM-CUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FEC6B493DC42C9BC45D7FA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MVVM-CTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE7F33D9C31D5584D3E1F792 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MVVM-C-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0A7CF787256A6F2C0085E7D8 /* Sources */ = {
@@ -525,6 +659,7 @@
 		};
 		0A7CF7B6256A6F2E0085E7D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1031AEE3836248ADBF79C6AF /* Pods-MVVM-C.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -544,6 +679,7 @@
 		};
 		0A7CF7B7256A6F2E0085E7D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4393BAE745F5FEA5DB9A2C33 /* Pods-MVVM-C.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -563,6 +699,7 @@
 		};
 		0A7CF7B9256A6F2E0085E7D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 117C25271B2562E5E6039D78 /* Pods-MVVM-CTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -585,6 +722,7 @@
 		};
 		0A7CF7BA256A6F2E0085E7D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8386569C1ADC83724861E5E /* Pods-MVVM-CTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -607,6 +745,7 @@
 		};
 		0A7CF7BC256A6F2E0085E7D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B1AC4B46779985EC6389D85 /* Pods-MVVM-C-MVVM-CUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -627,6 +766,7 @@
 		};
 		0A7CF7BD256A6F2E0085E7D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 068F36C771315A695591CCE8 /* Pods-MVVM-C-MVVM-CUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
