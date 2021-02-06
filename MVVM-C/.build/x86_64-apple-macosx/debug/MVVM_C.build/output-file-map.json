@@ -1,0 +1,89 @@
+{
+  "": {
+    "swift-dependencies": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/master.swiftdeps"
+  },
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/MVVM-C/AppDelegate.swift": {
+    "dependencies": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/AppDelegate.d",
+    "object": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/AppDelegate.swift.o",
+    "swiftmodule": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/AppDelegate~partial.swiftmodule",
+    "swift-dependencies": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/AppDelegate.swiftdeps"
+  },
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/MVVM-C/Coordinator.swift": {
+    "dependencies": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/Coordinator.d",
+    "object": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/Coordinator.swift.o",
+    "swiftmodule": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/Coordinator~partial.swiftmodule",
+    "swift-dependencies": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/Coordinator.swiftdeps"
+  },
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/MVVM-C/List/ListCoordinator.swift": {
+    "dependencies": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/List/ListCoordinator.d",
+    "object": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/List/ListCoordinator.swift.o",
+    "swiftmodule": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/List/ListCoordinator~partial.swiftmodule",
+    "swift-dependencies": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/List/ListCoordinator.swiftdeps"
+  },
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/MVVM-C/List/ListViewController.swift": {
+    "dependencies": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/List/ListViewController.d",
+    "object": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/List/ListViewController.swift.o",
+    "swiftmodule": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/List/ListViewController~partial.swiftmodule",
+    "swift-dependencies": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/List/ListViewController.swiftdeps"
+  },
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/MVVM-C/List/ListViewModel.swift": {
+    "dependencies": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/List/ListViewModel.d",
+    "object": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/List/ListViewModel.swift.o",
+    "swiftmodule": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/List/ListViewModel~partial.swiftmodule",
+    "swift-dependencies": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/List/ListViewModel.swiftdeps"
+  },
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/MVVM-C/List/ListViewModelProtocol.swift": {
+    "dependencies": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/List/ListViewModelProtocol.d",
+    "object": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/List/ListViewModelProtocol.swift.o",
+    "swiftmodule": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/List/ListViewModelProtocol~partial.swiftmodule",
+    "swift-dependencies": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/List/ListViewModelProtocol.swiftdeps"
+  },
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/MVVM-C/List/StringService.swift": {
+    "dependencies": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/List/StringService.d",
+    "object": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/List/StringService.swift.o",
+    "swiftmodule": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/List/StringService~partial.swiftmodule",
+    "swift-dependencies": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/List/StringService.swiftdeps"
+  },
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/MVVM-C/Login/LoginCoordinator.swift": {
+    "dependencies": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/Login/LoginCoordinator.d",
+    "object": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/Login/LoginCoordinator.swift.o",
+    "swiftmodule": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/Login/LoginCoordinator~partial.swiftmodule",
+    "swift-dependencies": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/Login/LoginCoordinator.swiftdeps"
+  },
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/MVVM-C/Login/LoginModel.swift": {
+    "dependencies": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/Login/LoginModel.d",
+    "object": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/Login/LoginModel.swift.o",
+    "swiftmodule": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/Login/LoginModel~partial.swiftmodule",
+    "swift-dependencies": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/Login/LoginModel.swiftdeps"
+  },
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/MVVM-C/Login/LoginViewController.swift": {
+    "dependencies": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/Login/LoginViewController.d",
+    "object": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/Login/LoginViewController.swift.o",
+    "swiftmodule": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/Login/LoginViewController~partial.swiftmodule",
+    "swift-dependencies": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/Login/LoginViewController.swiftdeps"
+  },
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/MVVM-C/Login/LoginViewModel.swift": {
+    "dependencies": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/Login/LoginViewModel.d",
+    "object": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/Login/LoginViewModel.swift.o",
+    "swiftmodule": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/Login/LoginViewModel~partial.swiftmodule",
+    "swift-dependencies": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/Login/LoginViewModel.swiftdeps"
+  },
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/MVVM-C/Login/UsersService.swift": {
+    "dependencies": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/Login/UsersService.d",
+    "object": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/Login/UsersService.swift.o",
+    "swiftmodule": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/Login/UsersService~partial.swiftmodule",
+    "swift-dependencies": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/Login/UsersService.swiftdeps"
+  },
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/MVVM-C/ViewControllerProtocol.swift": {
+    "dependencies": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/ViewControllerProtocol.d",
+    "object": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/ViewControllerProtocol.swift.o",
+    "swiftmodule": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/ViewControllerProtocol~partial.swiftmodule",
+    "swift-dependencies": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/ViewControllerProtocol.swiftdeps"
+  },
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/DerivedSources/resource_bundle_accessor.swift": {
+    "dependencies": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/resource_bundle_accessor.d",
+    "object": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/resource_bundle_accessor.swift.o",
+    "swiftmodule": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/resource_bundle_accessor~partial.swiftmodule",
+    "swift-dependencies": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/resource_bundle_accessor.swiftdeps"
+  }
+}

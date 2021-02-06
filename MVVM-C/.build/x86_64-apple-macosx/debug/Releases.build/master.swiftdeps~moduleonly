@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
+options: "060de8ff29aea90f43d879783f731e3c"
+build_time: [1612613061, 759786000]
+inputs:
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/checkouts/Releases/Sources/Array+Version.swift": [1612611040, 224719303]
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/checkouts/Releases/Sources/Releases.swift": [1612611040, 224905671]
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/checkouts/Releases/Sources/ReleasesError.swift": [1612611040, 225110085]
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/checkouts/Releases/Sources/Version.swift": [1612611040, 225325488]

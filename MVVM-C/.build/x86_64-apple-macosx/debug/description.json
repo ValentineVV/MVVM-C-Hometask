@@ -1,0 +1,91 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+    "\/Users\/valiantsin_vasiliavi\/Desktop\/MVVM-C-Hometask\/MVVM-C\/.build\/x86_64-apple-macosx\/debug\/MVVM-C_MVVM-C.bundle\/Assets.xcassets" : {
+      "inputs" : [
+        {
+          "kind" : "directory",
+          "name" : "\/Users\/valiantsin_vasiliavi\/Desktop\/MVVM-C-Hometask\/MVVM-C\/MVVM-C\/Assets.xcassets"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "directory",
+          "name" : "\/Users\/valiantsin_vasiliavi\/Desktop\/MVVM-C-Hometask\/MVVM-C\/.build\/x86_64-apple-macosx\/debug\/MVVM-C_MVVM-C.bundle\/Assets.xcassets"
+        }
+      ]
+    },
+    "\/Users\/valiantsin_vasiliavi\/Desktop\/MVVM-C-Hometask\/MVVM-C\/.build\/x86_64-apple-macosx\/debug\/MVVM-C_MVVM-C.bundle\/Base.lproj\/LaunchScreen.storyboard" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "\/Users\/valiantsin_vasiliavi\/Desktop\/MVVM-C-Hometask\/MVVM-C\/MVVM-C\/Base.lproj\/LaunchScreen.storyboard"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "\/Users\/valiantsin_vasiliavi\/Desktop\/MVVM-C-Hometask\/MVVM-C\/.build\/x86_64-apple-macosx\/debug\/MVVM-C_MVVM-C.bundle\/Base.lproj\/LaunchScreen.storyboard"
+        }
+      ]
+    },
+    "\/Users\/valiantsin_vasiliavi\/Desktop\/MVVM-C-Hometask\/MVVM-C\/.build\/x86_64-apple-macosx\/debug\/MVVM-C_MVVM-C.bundle\/Base.lproj\/LoginViewController.storyboard" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "\/Users\/valiantsin_vasiliavi\/Desktop\/MVVM-C-Hometask\/MVVM-C\/MVVM-C\/Login\/Base.lproj\/LoginViewController.storyboard"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "\/Users\/valiantsin_vasiliavi\/Desktop\/MVVM-C-Hometask\/MVVM-C\/.build\/x86_64-apple-macosx\/debug\/MVVM-C_MVVM-C.bundle\/Base.lproj\/LoginViewController.storyboard"
+        }
+      ]
+    },
+    "\/Users\/valiantsin_vasiliavi\/Desktop\/MVVM-C-Hometask\/MVVM-C\/.build\/x86_64-apple-macosx\/debug\/MVVM-C_MVVM-C.bundle\/Info.plist" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "\/Users\/valiantsin_vasiliavi\/Desktop\/MVVM-C-Hometask\/MVVM-C\/.build\/x86_64-apple-macosx\/debug\/MVVM_C.build\/Info.plist"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "\/Users\/valiantsin_vasiliavi\/Desktop\/MVVM-C-Hometask\/MVVM-C\/.build\/x86_64-apple-macosx\/debug\/MVVM-C_MVVM-C.bundle\/Info.plist"
+        }
+      ]
+    },
+    "\/Users\/valiantsin_vasiliavi\/Desktop\/MVVM-C-Hometask\/MVVM-C\/.build\/x86_64-apple-macosx\/debug\/MVVM-C_MVVM-C.bundle\/ListViewController.storyboard" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "\/Users\/valiantsin_vasiliavi\/Desktop\/MVVM-C-Hometask\/MVVM-C\/MVVM-C\/List\/ListViewController.storyboard"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "\/Users\/valiantsin_vasiliavi\/Desktop\/MVVM-C-Hometask\/MVVM-C\/.build\/x86_64-apple-macosx\/debug\/MVVM-C_MVVM-C.bundle\/ListViewController.storyboard"
+        }
+      ]
+    }
+  },
+  "swiftTargetMap" : {
+    "C.Danger-debug.module" : "Danger",
+    "C.Files-debug.module" : "Files",
+    "C.Marathon-debug.module" : "Marathon",
+    "C.MarathonCore-debug.module" : "MarathonCore",
+    "C.MVVM-C-debug.module" : "MVVM-C",
+    "C.Releases-debug.module" : "Releases",
+    "C.Require-debug.module" : "Require",
+    "C.Runner-debug.module" : "Runner",
+    "C.ShellOut-debug.module" : "ShellOut"
+  },
+  "testDiscoveryCommands" : {
+
+  }
+}

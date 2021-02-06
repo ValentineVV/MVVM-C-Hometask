@@ -58,6 +58,7 @@
 /* Begin PBXFileReference section */
 		01F03FEB76CD6EFCCE51849D /* Pods_MVVM_C.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_C.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		068F36C771315A695591CCE8 /* Pods-MVVM-C-MVVM-CUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-C-MVVM-CUITests.release.xcconfig"; path = "Target Support Files/Pods-MVVM-C-MVVM-CUITests/Pods-MVVM-C-MVVM-CUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0A04ACAE25CEB4A000A56485 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		0A0C1988256B9FD80061B03E /* ViewModelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelsTests.swift; sourceTree = "<group>"; };
 		0A0C198D256BA0230061B03E /* MockCoordinators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCoordinators.swift; sourceTree = "<group>"; };
 		0A0C1992256BA0F20061B03E /* MockViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockViews.swift; sourceTree = "<group>"; };
@@ -140,6 +141,7 @@
 		0A7CF782256A6F2C0085E7D8 = {
 			isa = PBXGroup;
 			children = (
+				0A04ACAE25CEB4A000A56485 /* Package.swift */,
 				0A1CFA2F25C6BB1700CF0BF5 /* .swiftlint.yml */,
 				0A7CF78D256A6F2C0085E7D8 /* MVVM-C */,
 				0A7CF7A4256A6F2E0085E7D8 /* MVVM-CTests */,

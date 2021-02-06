@@ -1,0 +1,15 @@
+version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
+options: "479b098b21471fcdb5b69cc5adad8b88"
+build_time: [1612613057, 801946000]
+inputs:
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/checkouts/swift/Sources/Danger/BitBucketServerDSL.swift": [1612612180, 525440442]
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/checkouts/swift/Sources/Danger/Danger.swift": [1612612180, 525681082]
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/checkouts/swift/Sources/Danger/DangerDSL.swift": [1612612180, 525887926]
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/checkouts/swift/Sources/Danger/DangerResults.swift": [1612612180, 526082994]
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/checkouts/swift/Sources/Danger/Extensions/DateFormatterExtensions.swift": [1612612180, 526298099]
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/checkouts/swift/Sources/Danger/Extensions/NSRegularExpressionExtensions.swift": [1612612180, 526507128]
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/checkouts/swift/Sources/Danger/File.swift": [1612612180, 526760779]
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/checkouts/swift/Sources/Danger/GitDSL.swift": [1612612180, 526964649]
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/checkouts/swift/Sources/Danger/GitHubDSL.swift": [1612612180, 527250986]
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/checkouts/swift/Sources/Danger/Logger.swift": [1612612180, 527403002]
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/checkouts/swift/Sources/Danger/Runtime.swift": [1612612180, 527878372]

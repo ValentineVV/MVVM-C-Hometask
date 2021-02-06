@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/Require.build/master.swiftdeps"
+  },
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/checkouts/Require/Sources/Require.swift": {
+    "dependencies": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/Require.build/Require.d",
+    "object": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/Require.build/Require.swift.o",
+    "swiftmodule": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/Require.build/Require~partial.swiftmodule",
+    "swift-dependencies": "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/Require.build/Require.swiftdeps"
+  }
+}

@@ -1,0 +1,252 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "LoginCoordinatorProtocol"
+- "LoginCoordinator"
+provides-nominal:
+- "6MVVM_C24LoginCoordinatorProtocolP"
+- "6MVVM_C16LoginCoordinatorC"
+provides-member:
+- ["6MVVM_C24LoginCoordinatorProtocolP", ""]
+- ["6MVVM_C16LoginCoordinatorC", ""]
+provides-dynamic-lookup:
+- "didLoginSuccessfully"
+- "navigationVC"
+- "start"
+depends-top-level:
+- "AssignmentPrecedence"
+- !private "BooleanLiteralType"
+- "CastingPrecedence"
+- "Coordinator"
+- !private "ListCoordinator"
+- "LoginCoordinator"
+- "LoginCoordinatorProtocol"
+- "LoginViewController"
+- !private "LoginViewModel"
+- !private "StringLiteralType"
+- "UINavigationController"
+- !private "UIStoryboard"
+- !private "UsersService"
+- !private "navigationVC"
+depends-member:
+- !private ["SK", ""]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "instantiateInitialViewController"]
+- !private ["s7CVarArgP", "model"]
+- !private ["s7CVarArgP", "pushViewController"]
+- !private ["Sl", ""]
+- !private ["SL", ""]
+- !private ["6MVVM_C11CoordinatorP", "ListCoordinator"]
+- !private ["6MVVM_C11CoordinatorP", "LoginViewModel"]
+- !private ["6MVVM_C11CoordinatorP", "UIStoryboard"]
+- !private ["6MVVM_C11CoordinatorP", "UsersService"]
+- ["6MVVM_C11CoordinatorP", ""]
+- ["6MVVM_C11CoordinatorP", "didLoginSuccessfully"]
+- !private ["6MVVM_C11CoordinatorP", "init"]
+- !private ["6MVVM_C11CoordinatorP", "navigationVC"]
+- ["6MVVM_C11CoordinatorP", "start"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "instantiateInitialViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "model"]
+- !private ["s28CustomDebugStringConvertibleP", "pushViewController"]
+- !private ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "instantiateInitialViewController"]
+- !private ["s23CustomStringConvertibleP", "model"]
+- !private ["s23CustomStringConvertibleP", "pushViewController"]
+- !private ["SQ", ""]
+- !private ["SQ", "init"]
+- !private ["SQ", "instantiateInitialViewController"]
+- !private ["SQ", "model"]
+- !private ["SQ", "pushViewController"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
+- !private ["s32ExpressibleByStringInterpolationP", ""]
+- !private ["s26ExpressibleByStringLiteralP", ""]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", ""]
+- !private ["SH", ""]
+- !private ["SH", "init"]
+- !private ["SH", "instantiateInitialViewController"]
+- !private ["SH", "model"]
+- !private ["SH", "pushViewController"]
+- !private ["6MVVM_C15ListCoordinatorC", ""]
+- !private ["6MVVM_C15ListCoordinatorC", "init"]
+- !private ["6MVVM_C15ListCoordinatorC", "start"]
+- !private ["6MVVM_C23ListCoordinatorProtocolP", "init"]
+- !private ["6MVVM_C23ListCoordinatorProtocolP", "start"]
+- !private ["6MVVM_C16LoginCoordinatorC", "ListCoordinator"]
+- !private ["6MVVM_C16LoginCoordinatorC", "LoginViewController"]
+- !private ["6MVVM_C16LoginCoordinatorC", "LoginViewModel"]
+- ["6MVVM_C16LoginCoordinatorC", "UINavigationController"]
+- !private ["6MVVM_C16LoginCoordinatorC", "UIStoryboard"]
+- !private ["6MVVM_C16LoginCoordinatorC", "UsersService"]
+- ["6MVVM_C16LoginCoordinatorC", ""]
+- ["6MVVM_C16LoginCoordinatorC", "deinit"]
+- ["6MVVM_C16LoginCoordinatorC", "didLoginSuccessfully"]
+- ["6MVVM_C16LoginCoordinatorC", "init"]
+- !private ["6MVVM_C16LoginCoordinatorC", "navigationVC"]
+- ["6MVVM_C16LoginCoordinatorC", "start"]
+- !private ["6MVVM_C24LoginCoordinatorProtocolP", "ListCoordinator"]
+- !private ["6MVVM_C24LoginCoordinatorProtocolP", "LoginViewModel"]
+- !private ["6MVVM_C24LoginCoordinatorProtocolP", "UIStoryboard"]
+- !private ["6MVVM_C24LoginCoordinatorProtocolP", "UsersService"]
+- ["6MVVM_C24LoginCoordinatorProtocolP", ""]
+- ["6MVVM_C24LoginCoordinatorProtocolP", "didLoginSuccessfully"]
+- !private ["6MVVM_C24LoginCoordinatorProtocolP", "navigationVC"]
+- ["6MVVM_C24LoginCoordinatorProtocolP", "start"]
+- !private ["6MVVM_C19LoginViewControllerC", ""]
+- !private ["6MVVM_C19LoginViewControllerC", "model"]
+- !private ["6MVVM_C27LoginViewControllerProtocolP", "model"]
+- !private ["6MVVM_C14LoginViewModelC", ""]
+- !private ["6MVVM_C14LoginViewModelC", "init"]
+- !private ["6MVVM_C22LoginViewModelProtocolP", "init"]
+- !private ["s25LosslessStringConvertibleP", ""]
+- !private ["So8NSCodingP", "model"]
+- !private ["So8NSCodingP", "pushViewController"]
+- !private ["So26NSExtensionRequestHandlingP", "model"]
+- !private ["So26NSExtensionRequestHandlingP", "pushViewController"]
+- ["So8NSObjectC", ""]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "instantiateInitialViewController"]
+- !private ["So8NSObjectC", "model"]
+- !private ["So8NSObjectC", "pushViewController"]
+- !private ["So8NSObjectC", "storyboardWithName"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "instantiateInitialViewController"]
+- !private ["So8NSObjectP", "model"]
+- !private ["So8NSObjectP", "pushViewController"]
+- !private ["So8NSObjectP", "storyboardWithName"]
+- !private ["ST", ""]
+- !private ["s16TextOutputStreamP", ""]
+- !private ["s20TextOutputStreamableP", ""]
+- !private ["So21UIAppearanceContainerP", "model"]
+- !private ["So21UIAppearanceContainerP", "pushViewController"]
+- !private ["So18UIContentContainerP", "model"]
+- !private ["So18UIContentContainerP", "pushViewController"]
+- !private ["So18UIFocusEnvironmentP", "model"]
+- !private ["So18UIFocusEnvironmentP", "pushViewController"]
+- !private ["So22UINavigationControllerC", "pushViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "model"]
+- !private ["So30UIPasteConfigurationSupportingP", "pushViewController"]
+- ["So11UIResponderC", ""]
+- !private ["So11UIResponderC", "model"]
+- !private ["So11UIResponderC", "pushViewController"]
+- !private ["So30UIResponderStandardEditActionsP", "model"]
+- !private ["So30UIResponderStandardEditActionsP", "pushViewController"]
+- !private ["So16UIStateRestoringP", "model"]
+- !private ["So16UIStateRestoringP", "pushViewController"]
+- !private ["So12UIStoryboardC", "init"]
+- !private ["So12UIStoryboardC", "instantiateInitialViewController"]
+- !private ["So19UITextFieldDelegateP", "model"]
+- !private ["So18UITraitEnvironmentP", "model"]
+- !private ["So18UITraitEnvironmentP", "pushViewController"]
+- !private ["So23UIUserActivityRestoringP", "model"]
+- !private ["So23UIUserActivityRestoringP", "pushViewController"]
+- ["So16UIViewControllerC", ""]
+- !private ["So16UIViewControllerC", "model"]
+- !private ["So16UIViewControllerC", "pushViewController"]
+- !private ["6MVVM_C12UsersServiceV", "init"]
+- !private ["6MVVM_C20UsersServiceProtocolP", "init"]
+- ["6MVVM_C22ViewControllerProtocolP", ""]
+- !private ["6MVVM_C22ViewControllerProtocolP", "model"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateInitialViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "model"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "pushViewController"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "instantiateInitialViewController"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "model"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "pushViewController"]
+depends-nominal:
+- !private "SK"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- "6MVVM_C11CoordinatorP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s23CustomStringConvertibleP"
+- !private "SQ"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "SH"
+- !private "6MVVM_C15ListCoordinatorC"
+- !private "6MVVM_C23ListCoordinatorProtocolP"
+- "6MVVM_C16LoginCoordinatorC"
+- "6MVVM_C24LoginCoordinatorProtocolP"
+- !private "6MVVM_C19LoginViewControllerC"
+- !private "6MVVM_C27LoginViewControllerProtocolP"
+- !private "6MVVM_C14LoginViewModelC"
+- !private "6MVVM_C22LoginViewModelProtocolP"
+- !private "s25LosslessStringConvertibleP"
+- !private "So8NSCodingP"
+- !private "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "ST"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So21UIAppearanceContainerP"
+- !private "So18UIContentContainerP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So22UINavigationControllerC"
+- !private "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So16UIStateRestoringP"
+- !private "So12UIStoryboardC"
+- !private "So19UITextFieldDelegateP"
+- !private "So18UITraitEnvironmentP"
+- !private "So23UIUserActivityRestoringP"
+- "So16UIViewControllerC"
+- !private "6MVVM_C12UsersServiceV"
+- !private "6MVVM_C20UsersServiceProtocolP"
+- "6MVVM_C22ViewControllerProtocolP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/usr/include/mach-o/dyld.modulemap"
+- "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/module.modulemap"
+- "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/Require.build/module.modulemap"
+- "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MarathonCore.build/module.modulemap"
+- "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/Danger.build/module.modulemap"
+- "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/Files.build/module.modulemap"
+- "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/Releases.build/module.modulemap"
+- "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/ShellOut.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "8deb144d85245af32d48c8742d86e85f"

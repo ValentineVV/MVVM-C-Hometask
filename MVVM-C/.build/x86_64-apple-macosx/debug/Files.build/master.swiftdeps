@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
+options: "5cf2b8c780d6aca324febc7c40e1915d"
+build_time: [1612613057, 801544000]
+inputs:
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/checkouts/Files/Sources/Files.swift": [1612611040, 852302438]

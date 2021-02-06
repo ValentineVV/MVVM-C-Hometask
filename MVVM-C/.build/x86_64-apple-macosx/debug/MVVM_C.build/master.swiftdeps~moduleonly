@@ -1,0 +1,18 @@
+version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
+options: "5f4245428203c927929b30b3630bb0ac"
+build_time: [1612612991, 979792000]
+inputs:
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/MVVM-C/AppDelegate.swift": [1612101407, 735340638]
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/MVVM-C/Coordinator.swift": [1606042408, 712907631]
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/MVVM-C/List/ListCoordinator.swift": [1612101407, 737096685]
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/MVVM-C/List/ListViewController.swift": [1612101407, 737930319]
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/MVVM-C/List/ListViewModel.swift": [1612101407, 738634170]
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/MVVM-C/List/ListViewModelProtocol.swift": [1607772303, 922024604]
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/MVVM-C/List/StringService.swift": [1612101407, 739407710]
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/MVVM-C/Login/LoginCoordinator.swift": [1612101407, 742417877]
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/MVVM-C/Login/LoginModel.swift": [1607770768, 395689366]
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/MVVM-C/Login/LoginViewController.swift": [1612101407, 743207477]
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/MVVM-C/Login/LoginViewModel.swift": [1612101407, 744074055]
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/MVVM-C/Login/UsersService.swift": [1612101407, 745047805]
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/MVVM-C/ViewControllerProtocol.swift": [1612101407, 745994322]
+  "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/DerivedSources/resource_bundle_accessor.swift": [1612612671, 879450297]

@@ -1,0 +1,4 @@
+module MVVM_C {
+    header "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MVVM_C.build/MVVM-C-Swift.h"
+    requires objc
+}

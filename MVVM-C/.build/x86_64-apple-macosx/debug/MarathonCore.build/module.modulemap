@@ -1,0 +1,4 @@
+module MarathonCore {
+    header "/Users/valiantsin_vasiliavi/Desktop/MVVM-C-Hometask/MVVM-C/.build/x86_64-apple-macosx/debug/MarathonCore.build/MarathonCore-Swift.h"
+    requires objc
+}
