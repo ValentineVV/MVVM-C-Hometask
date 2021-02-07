@@ -9,34 +9,134 @@ import XCTest
 
 class MVVM_CUITests: XCTestCase {
 
+    var app: XCUIApplication!
+
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        app = XCUIApplication()
+        app.launch()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        app = nil
     }
 
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
-        app.launch()
+    func testWrongCredsOnLogin() throws {
+        let navTitle = app.navigationBars.firstMatch.staticTexts.firstMatch.label
+        XCTAssertEqual(navTitle, "Login screen")
 
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let enterCredsText = app.staticTexts["Enter credentials"].firstMatch.label
+        XCTAssertEqual(enterCredsText, "Enter credentials")
+
+        XCTAssertFalse(app.staticTexts["com.edu.MVVM-C.errorLabel"].exists)
+
+        let loginTextField = app.textFields["com.edu.MVVM-C.loginTextField"]
+        loginTextField.tap()
+        loginTextField.typeText("user")
+
+        let pswTextField = app.textFields["com.edu.MVVM-C.pswTextField"]
+        pswTextField.tap()
+        pswTextField.typeText("123\n")
+
+        expectToEventually(app.staticTexts["com.edu.MVVM-C.errorLabel"].exists, timeout: 2)
+
+        XCTAssertTrue(app.staticTexts["com.edu.MVVM-C.errorLabel"].exists)
+
+        let errorText = app.staticTexts["com.edu.MVVM-C.errorLabel"].label
+        XCTAssertEqual(errorText, "There is no such user")
     }
 
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
+    func testEmptyLoginOnLogin() throws {
+        let navTitle = app.navigationBars.firstMatch.staticTexts.firstMatch.label
+        XCTAssertEqual(navTitle, "Login screen")
+
+        let enterCredsText = app.staticTexts["Enter credentials"].firstMatch.label
+        XCTAssertEqual(enterCredsText, "Enter credentials")
+
+        XCTAssertFalse(app.staticTexts["com.edu.MVVM-C.errorLabel"].exists)
+
+        let pswTextField = app.textFields["com.edu.MVVM-C.pswTextField"]
+        pswTextField.tap()
+        pswTextField.typeText("123\n")
+
+        expectToEventually(app.staticTexts["com.edu.MVVM-C.errorLabel"].exists, timeout: 2)
+
+        XCTAssertTrue(app.staticTexts["com.edu.MVVM-C.errorLabel"].exists)
+
+        let errorText = app.staticTexts["com.edu.MVVM-C.errorLabel"].label
+        XCTAssertEqual(errorText, "Email field is empty")
+    }
+
+    func testEmpryPasswordOnLogin() throws {
+        let navTitle = app.navigationBars.firstMatch.staticTexts.firstMatch.label
+        XCTAssertEqual(navTitle, "Login screen")
+
+        let enterCredsText = app.staticTexts["Enter credentials"].firstMatch.label
+        XCTAssertEqual(enterCredsText, "Enter credentials")
+
+        XCTAssertFalse(app.staticTexts["com.edu.MVVM-C.errorLabel"].exists)
+
+        let loginTextField = app.textFields["com.edu.MVVM-C.loginTextField"]
+        loginTextField.tap()
+        loginTextField.typeText("user")
+
+        let pswTextField = app.textFields["com.edu.MVVM-C.pswTextField"]
+        pswTextField.tap()
+        pswTextField.typeText("\n")
+
+        expectToEventually(app.staticTexts["com.edu.MVVM-C.errorLabel"].exists, timeout: 2)
+
+        XCTAssertTrue(app.staticTexts["com.edu.MVVM-C.errorLabel"].exists)
+
+        let errorText = app.staticTexts["com.edu.MVVM-C.errorLabel"].label
+        XCTAssertEqual(errorText, "Password field is empty")
+    }
+
+    func testSuccessOnLogin() throws {
+        let navTitle = app.navigationBars.firstMatch.staticTexts.firstMatch.label
+        XCTAssertEqual(navTitle, "Login screen")
+
+        let enterCredsText = app.staticTexts["Enter credentials"].firstMatch.label
+        XCTAssertEqual(enterCredsText, "Enter credentials")
+
+        XCTAssertFalse(app.staticTexts["com.edu.MVVM-C.errorLabel"].exists)
+
+        let loginTextField = app.textFields["com.edu.MVVM-C.loginTextField"]
+        loginTextField.tap()
+        loginTextField.typeText("user")
+
+        let pswTextField = app.textFields["com.edu.MVVM-C.pswTextField"]
+        pswTextField.tap()
+        pswTextField.typeText("123qwe\n")
+
+        let navTitleAfterLogin = app.navigationBars.firstMatch.staticTexts["List screen"].label
+        expectToEventually(navTitleAfterLogin == "List screen", timeout: 2)
+
+        let tableCount = app.tables.firstMatch.cells.count
+        XCTAssertTrue(tableCount == 10)
+    }
+
+}
+
+extension XCTest {
+
+    func expectToEventually(
+        _ isFulfilled: @autoclosure () -> Bool,
+        timeout: TimeInterval,
+        message: String = "",
+        file: StaticString = #filePath,
+        line: UInt = #line
+    ) {
+        func wait() { RunLoop.current.run(until: Date(timeIntervalSinceNow: 0.01)) }
+
+        let timeout = Date(timeIntervalSinceNow: timeout)
+        func isTimeout() -> Bool { Date() >= timeout }
+
+        repeat {
+            if isFulfilled() { return }
+            wait()
+        } while !isTimeout()
+
+        XCTFail(message, file: file, line: line)
     }
 }

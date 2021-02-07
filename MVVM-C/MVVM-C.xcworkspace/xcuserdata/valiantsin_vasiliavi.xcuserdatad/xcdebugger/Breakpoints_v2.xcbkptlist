@@ -1,70 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
-   uuid = "9F20B99A-E6EA-45C9-A7AE-D6A52EB57DB8"
-   type = "1"
+   uuid = "DB1C5849-E716-4F34-B72D-2556BE6F8884"
+   type = "0"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C43FE08B-DB73-4622-B647-2167468055D3"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MVVM-C/Login/LoginCoordinator.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "didLoginSuccessfully()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D63CA21A-60C8-4B68-85D4-F7321313F7F1"
+            uuid = "913D13A5-5FE7-455F-B8B7-F47D516AA36E"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MVVM-C/Login/LoginViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
-            landmarkName = "textFieldShouldReturn(_:)"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "keyboardWillAppear(notification:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "10A7958A-109C-4B8C-8BEA-49F7B824D31A"
+            uuid = "C862378F-4BBA-4AB8-9C56-8D50FC020381"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MVVM-C/Login/LoginViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "login()"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "keyboardWillDisappear(notification:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "7C7033A7-818C-4B04-9118-61C6D9E1C3D3"
+            uuid = "B2CCCE5D-F893-4EEC-AC1E-893508D39F8D"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MVVM-C/Login/LoginViewController.swift"
+            filePath = "MVVM-CUITests/MVVM_CUITests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
-            landmarkName = "textFieldShouldBeginEditing(_:)"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
+            landmarkName = "expectToEventually(_:timeout:message:file:line:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F28ED4CB-A13D-4F8A-96D5-A5618EF9013A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVM-CUITests/MVVM_CUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "testSuccessOnLogin()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -57,7 +57,7 @@ extension ListViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "listViewCell", for: indexPath)
         cell.textLabel?.text = viewModel.list[indexPath.row]
         cell.selectionStyle = .none
 

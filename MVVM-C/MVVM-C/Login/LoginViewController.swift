@@ -32,10 +32,27 @@ class LoginViewController: UIViewController, LoginViewControllerProtocol {
         title = "Login screen"
 
         emailTextField.delegate = self
+        emailTextField.accessibilityIdentifier = "com.edu.MVVM-C.loginTextField"
         pswTextField.delegate = self
+        pswTextField.accessibilityIdentifier = "com.edu.MVVM-C.pswTextField"
+
+        errorLabel.accessibilityIdentifier = "com.edu.MVVM-C.errorLabel"
 
         let recognizer = UITapGestureRecognizer(target: self, action: #selector(removeKeyboard))
         view.addGestureRecognizer(recognizer)
+
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillAppear(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillDisappear(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+
+    @objc private func keyboardWillAppear(notification: Notification) {
+        if view.frame.origin.y == 0 {
+            view.frame.origin.y -= 100
+        }
+    }
+
+    @objc private func keyboardWillDisappear(notification: Notification) {
+        view.frame.origin.y = 0
     }
 
     override func viewWillDisappear(_ animated: Bool) {
